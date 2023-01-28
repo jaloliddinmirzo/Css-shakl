@@ -1,49 +1,37 @@
 
- 
-var kartoshka = {
-    code :50,
-    price : 5000,
-    title : "Kartoshka",
- };
- var piyoz = {
-    code :40,
-    price : 7000,
-    title : "Piyoz",
- };
- var sabzi = {
-    code :60,
-    price : 4000,
-    title : "Sabzi",
- };
- var i=0;
- function kir (cod,massa){
 
+var tez = [85, 75, 95, 152];
+function kir(x) {
+   var sum = 0;
+   for (var sp of tez) {
+      sum += sp*2;
+      if (sp > 150 && sp <=180) {
+         console.log(`Siz ${sp} tezlikda  yurganingiz uchun jarima ${sp*2} ming so'm `);
+      }
+      if (sp > 100 && sp <=150) {
+         console.log(`Siz ${sp} tezlikda  yurganingiz uchun jarima ${sp*2} ming so'm `);
+      }
+      if (sp >= 81 && sp <=100) {
+         console.log(`Siz ${sp} tezlikda  yurganingiz uchun jarima ${sp*2} ming so'm `);
+      }
+      if (sp > 70 && sp <=80) {
+         console.log(`Siz ${sp} tezlikda  yurganingiz uchun jarima ${sp*2} ming so'm `);
+      }
 
-    function colc(kod){
-    if ( kod.code == cod){
-        var k = kod.price * massa; 
-        console.log(kod.title+" "+" 1kg " + kod.price); 
-        console.log(kod.title+" "+" codesi " + kod.code); 
-        console.log(kod.title+" "+" Massasi " + massa); 
-        console.log("Sum: " + k);
-        i +=k;
-        }
+     
+   }
+   return sum;
 }
 
-colc(kartoshka);
-colc(piyoz);
-colc(sabzi);
-}
+var a= console.log(`Umumiy summa ${kir(tez)} ming so'm` );
+
 
 // var a = prompt("Codeni kiriting","0");
 // var b = prompt("Massani kiriting","0");
 
-kir(50,6);
-kir(40,9);
-kir(60,2);
 
 
-console.log("Umumiy summa: " +i);
+// console.log("Umumiy summa: " + i);
 
 // else{
 //     console.log("Error")
@@ -55,7 +43,7 @@ console.log("Umumiy summa: " +i);
 // }
 
 
-// var a = prompt("Necha  pulingiz bor?");
+// var a = prompt("Nec tezlikda ha  pulingiz bor?");
 // // var b = prompt("Massani kiriting");
 
 
