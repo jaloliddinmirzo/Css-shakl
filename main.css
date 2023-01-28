@@ -8,135 +8,29 @@ html{
 }
 body{
     height: 100%;
-    background-color: #09042A;
-    display: flex;
+    background-color: #0B2429;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 500PX;
+    padding-right: 500PX; */
 }
 .container{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    width: 100%;
-    height: 100vh;
+    /* align-items: center; */
+
 }
 
 .box_header{
     position: relative;
     display: flex;
+
     justify-content: space-between;
     align-items: center;
-    width: 320px ;
-    height: 120px;
-    /* border-radius: 50%; */
-    background-color: transparent;
-
+    border: 200px solid ;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #F3AC3C;
+    transform:rotate(-45deg)  translate(-22px,-350px) ;
     
 }
-
-.oval{
-    width: 120px ;
-    height: 120px;
-    background-color: #E78481;
-    border-radius: 50%;
-    transform: translate(0px , 0px);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    /* opacity: 0.5; */
-
-}
-.oval::after{
-    position: absolute;
-    content: "";
-    left: 10px;
-    top: 10px;
-    /* right: 550px; */
-    width: 100px ;
-    height: 100px;
-    background-color: #09042A;
-    border-radius: 100%;
-    /* z-index: 1; */
-
-    /* border-radius: 50%; */
-    /* transform: translate(400px , -50px); */
-}
-.oval2{
-    width: 120px ;
-    height: 80px;
-    margin-left: -30px;
-    margin-right: -30px;
-    background-color: #E78481;
-}
-.oval2::after{
-    content: "";
-    position: absolute;
-    width: 100px ;
-    height: 100px;
-    left: 120px;
-    top: -90px;
-    margin-left: -30px;
-    margin-right: -30px;
-    border: 20px solid #09042A;
-    border-radius: 50%;
-    background-color:#F5BB9C;
-}
-.oval2::before{
-    content: "";
-    position: absolute;
-    width: 100px ;
-    height: 100px;
-    left: 120px;
-    top: 70px;
-    margin-left: -30px;
-    margin-right: -30px;
-    border: 20px solid #09042A;
-    border-radius: 50%;
-    background-color:#F5BB9C;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
